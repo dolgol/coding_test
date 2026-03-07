@@ -3,7 +3,7 @@ function solution(brown, yellow) {
     let isEnd = false;
 
     // brown + yellow = w * h;
-    for (w = 3; w <= 2000002; w++) {
+    for (w = 3; w <= ((brown + yellow) / 3); w++) {
         h = (brown + yellow) / w;
         if (!(Number.isInteger(h)) || h > w) {
             continue;
