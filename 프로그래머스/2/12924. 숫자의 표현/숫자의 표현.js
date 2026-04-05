@@ -2,7 +2,7 @@ function solution(n) {
     let answer = 0;
     let start = 1;
     
-    while (start <= n) {
+    while (start < n) {
         let temp = 0;
         for (let i = start; i < n; i++) {
             temp += i;
